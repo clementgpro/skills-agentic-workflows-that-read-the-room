@@ -46,11 +46,11 @@ Keep Mona's GitHub Info website current while preserving her editorial direction
 
 ## Review handoff
 
-After updating the content, inspect the diff and request exactly one `create-pull-request` safe output. The pull request must:
+After updating the content, inspect the diff. If `site/content/github-info.md` changed, create a dedicated branch, stage only that file, and commit it before requesting exactly one `create-pull-request` safe output. Do not request a PR when there are no content changes. The pull request must:
 
 - target the repository's default branch;
 - explain what changed and list the official source URLs;
 - state that the change is ready for Mona to review;
 - include only the intended update to `site/content/github-info.md`.
 
-Do not write directly to the default branch, merge anything, or create any other output.
+Do not push the branch yourself, write directly to the default branch, merge anything, or create any other output. After the single `create-pull-request` call, stop.
